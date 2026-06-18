@@ -1,0 +1,9 @@
+This assignment helped me better understand JavaScript primitive data types and how values are stored and used within a program. I learned that JavaScript has several primitive types including number, string, boolean, undefined, and null. Although undefined and null may seem similar at first, they serve different purposes. Undefined means a variable has been declared but has not yet been assigned a value, while null is used when a programmer intentionally wants a variable to have no value.
+
+I also learned about type conversion and type coercion. Type conversion happens when a value is explicitly changed from one type to another using functions such as String(), Number(), or Boolean(). During the assignment I converted numbers to strings, strings to booleans, booleans to numbers, and null to a number. One interesting result was that converting null to a number produces 0. Learning about this behavior helped me understand how JavaScript handles different data types behind the scenes.
+
+I used AI as a learning tool throughout this assignment. Rather than simply copying answers, I used it to explain concepts that were unfamiliar to me, such as the difference between null and undefined and the idea of type coercion. The explanations helped me understand why JavaScript behaves the way it does instead of just memorizing outputs.
+
+A moment where AI was especially helpful was explaining why Number(null) returns 0. The explanation clarified that this behavior comes from JavaScript's built-in conversion rules. Understanding the reasoning behind the result made it easier to remember.
+
+Going forward, I would like to learn more about type coercion and how JavaScript automatically converts values in expressions. It seems like a powerful feature, but it can also create unexpected bugs if a programmer does not understand how it works.

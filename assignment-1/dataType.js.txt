@@ -1,0 +1,138 @@
+// Part 1: Primitive Data Types
+
+let age = 28;
+let name = "Brandon";
+let isEnrolled = true;
+
+let futureGoal;
+
+let completedCourse = null;
+
+// Print value and type
+
+console.log("Age:", age, "| Type:", typeof age);
+console.log("Name:", name, "| Type:", typeof name);
+console.log("isEnrolled:", isEnrolled, "| Type:", typeof isEnrolled);
+console.log("futureGoal:", futureGoal, "| Type:", typeof futureGoal);
+console.log("completedCourse:", completedCourse, "| Type:", typeof completedCourse);
+
+/*
+AI Learning Opportunity:
+
+null represents the intentional absence of a value.
+undefined means a variable exists but has not been assigned a value.
+
+Developers often use null when they want to explicitly indicate
+that something currently has no value. Undefined usually occurs
+when a variable has been declared but not assigned.
+*/
+
+// Part 2: Type Conversions
+
+// Age (Number) to String
+const ageAsString = String(age);
+
+console.log(
+    "Original:",
+    age,
+    typeof age,
+    "| Converted:",
+    ageAsString,
+    typeof ageAsString
+);
+
+// Name (String) to Boolean
+const nameAsBoolean = Boolean(name);
+
+console.log(
+    "Original:",
+    name,
+    typeof name,
+    "| Converted:",
+    nameAsBoolean,
+    typeof nameAsBoolean
+);
+
+// isEnrolled (Boolean) to Number
+const enrolledAsNumber = Number(isEnrolled);
+
+console.log(
+    "Original:",
+    isEnrolled,
+    typeof isEnrolled,
+    "| Converted:",
+    enrolledAsNumber,
+    typeof enrolledAsNumber
+);
+
+// completedCourse (Null) to Number
+const completedCourseAsNumber = Number(completedCourse);
+
+console.log(
+    "Original:",
+    completedCourse,
+    typeof completedCourse,
+    "| Converted:",
+    completedCourseAsNumber,
+    typeof completedCourseAsNumber
+);
+
+/*
+When null is converted to a Number in JavaScript,
+the result is 0.
+
+JavaScript returns 0 because null is treated as
+an empty value during numeric conversion.
+This behavior is part of JavaScript's type coercion rules.
+*/
+
+// Part 3.1 Arithmetic Operations
+
+let x = 20;
+let y = 5;
+
+console.log("Addition:", x + y);
+console.log("Subtraction:", x - y);
+console.log("Multiplication:", x * y);
+console.log("Division:", x / y);
+console.log("Modulus:", x % y);
+
+// Division by zero
+
+console.log("20 / 0 =", x / 0);
+
+/*
+Dividing by zero in JavaScript returns Infinity.
+Unlike many programming languages, JavaScript does
+not throw an error for division by zero.
+*/
+
+// Part 3.2 Logical Operations
+
+let hasCompletedAssignment = false;
+
+console.log(
+    "AND:",
+    isEnrolled && hasCompletedAssignment
+);
+
+console.log(
+    "OR:",
+    isEnrolled || hasCompletedAssignment
+);
+
+console.log(
+    "NOT isEnrolled:",
+    !isEnrolled
+);
+
+/*
+Truth Table
+
+| A     | B     | A && B | A || B |
+|-------|-------|--------|--------|
+| true  | true  | true   | true   |
+| true  | false | false  | true   |
+| false | true  | false  | true   |
+| false | false | false  | false  |
+*/
